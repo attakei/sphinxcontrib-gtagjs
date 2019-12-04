@@ -17,6 +17,10 @@ jobs:
       - name: Install dependencies
         run: |
           pip install -e '.[linting]'
-      - name: Lint with doc8
+      - name: Lint documents
         run: |
           doc8 README.rst
+      - name: Lint sources
+        run: |
+          flake8 sphinxcontrib/
+          black --check sphinxcontrib/

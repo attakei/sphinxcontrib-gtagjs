@@ -27,6 +27,6 @@ Configuration
 
 .. code-block:: python
 
-    gtag_ids = [
+    gtagjs_ids = [
         'UA-1234-1234',
     ]

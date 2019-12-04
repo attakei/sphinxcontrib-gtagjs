@@ -15,7 +15,7 @@ Currenlty, install from GitHub directly.
 Configuration
 -------------
 
-1. Add this extension into ``conf.py`` .
+1 - Add this extension into ``conf.py`` .
 
 .. code-block:: python
 
@@ -23,7 +23,7 @@ Configuration
         'sphinxcontrib.gtag',
     ]
 
-2. Set your IDs for gtag.js
+2 - Set your IDs for gtag.js
 
 .. code-block:: python
 

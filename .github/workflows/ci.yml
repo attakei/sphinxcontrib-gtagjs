@@ -1,0 +1,22 @@
+---
+name: Continuous Integration
+
+# yamllint disable-line rule:truthy
+on:
+  - push
+
+jobs:
+  doc8:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Set up Python 3.7
+        uses: actions/setup-python@v1
+        with:
+          python-version: 3.7
+      - name: Install dependencies
+        run: |
+          pip install doc8 pygments
+      - name: Lint with doc8
+        run: |
+          doc8 README.rst

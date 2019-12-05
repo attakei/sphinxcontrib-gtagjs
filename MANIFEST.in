@@ -1,0 +1,5 @@
+ 
+include README.rst
+include MANIFEST.in
+recursive-include sphinxcontrib *
+recursive-exclude sphinxcontrib *.pyc

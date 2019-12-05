@@ -18,9 +18,7 @@ def add_gtagjs_context(
         return
     template = Template(
         """
-        {% for gtagjs_id in gtagjs_ids %}
-        <script async src="https://www.googletagmanager.com/gtag/js?id={{ gtagjs_id }}"></script>
-        {% endfor %}
+        <script async src="https://www.googletagmanager.com/gtag/js"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}

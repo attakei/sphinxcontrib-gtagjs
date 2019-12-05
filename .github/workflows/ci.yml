@@ -22,8 +22,8 @@ jobs:
           doc8 README.rst
       - name: Lint sources
         run: |
-          flake8 sphinxcontrib/
-          black --check sphinxcontrib/
+          flake8 sphinxcontrib/ setup.py
+          black --check sphinxcontrib/ setup.py
   package-test:
     runs-on: ubuntu-latest
     strategy:

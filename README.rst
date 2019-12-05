@@ -6,11 +6,11 @@ Sphinx extension to render global site tag of Google.
 Installation
 ------------
 
-Currenlty, install from GitHub directly.
+Install from PyPI
 
 .. code-block:: bash
 
-    pip install https://github.com/attakei/sphinxcontrib-gtag/archive/master.zip
+    pip install sphinxcontrib-gtagjs
 
 Configuration
 -------------
@@ -20,7 +20,7 @@ Configuration
 .. code-block:: python
 
     extensions = [
-        'sphinxcontrib.gtag',
+        'sphinxcontrib.gtagjs',
     ]
 
 2 - Set your IDs for gtag.js

@@ -4,7 +4,7 @@ from jinja2 import Template
 from sphinx.application import Sphinx
 
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 
 
 def add_gtagjs_context(

@@ -3,7 +3,9 @@ name: Continuous Integration
 
 # yamllint disable-line rule:truthy
 on:
-  - push
+  push:
+    branches:    
+      - '*'
 
 jobs:
   linting:

@@ -1,4 +1,4 @@
 """Setup module."""
 from setuptools import setup
 
-setup(version="0.1.1")
+setup(version="0.2.0")

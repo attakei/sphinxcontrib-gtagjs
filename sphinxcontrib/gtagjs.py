@@ -1,3 +1,7 @@
+"""sphinxcontrib-gtagjs is helper extension to embed gtag.js.
+
+Support HTML based builder.
+"""
 # flake8: noqa
 from typing import Any
 from jinja2 import Template
@@ -10,7 +14,7 @@ __version__ = "0.2.0"
 def add_gtagjs_context(
     app: Sphinx, pathname: str, templatename: str, context: dict, doctree: Any
 ) -> None:
-    """Build gtag.js tags and register content
+    """Build gtag.js tags and register content.
 
     TODO: Write tests after
     """
@@ -35,7 +39,7 @@ def add_gtagjs_context(
     context["metatags"] = metatags
 
 
-def setup(app: Sphinx):
+def setup(app: Sphinx):  # noqa: D103
     app.add_config_value("gtagjs_ids", [], "html")
     app.connect("html-page-context", add_gtagjs_context)
     return {

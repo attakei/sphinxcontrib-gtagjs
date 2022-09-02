@@ -1,0 +1,6 @@
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+{% for id in gtagjs_ids %}
+gtag('config', '{{ id }}');
+{% endfor %}
